@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #333, #555);
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: auto;
+    background: #444;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  .container tr div{
+    position:relative;
+    left:-33px;
+   }
+   .container tr .Tolerancest{
+    left:-62px;
+   }
+   
+  table {
+    margin: 20px auto;
+  }
+  
+  .controls {
+    margin: 20px 0;
+  }
+  
+  select {
+    background: #333;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 5px 0;
+  }
+  
+  select option {
+    padding: 5px;
+  }
+  
+  #result {
+    margin-top: 20px;
+    font-size: 1.2em;
+  }
+  table tr th{
+    transform:translatex(0px) translatey(0px);
+    font-size:19px;
+    line-height:37.1px;
+   }
+  

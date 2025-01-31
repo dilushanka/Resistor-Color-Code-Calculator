@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resistor Color Code Preview</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Resistor Color Code Calculator</h1>
+    <table width="300" cellpadding="0" cellspacing="0" background="./img/resistor.png">
+      <tbody>
+        <tr>
+          <td height="61">
+            <div style="width:76px;display:inline-block;"></div>
+            <div id="band1-preview" style="display:inline-block;width:12px;height:59px;margin:1px 0px;background-color:gray;"></div>
+            <div style="width:12px;display:inline-block;"></div>
+            <div id="band2-preview" style="display:inline-block;width:12px;height:49px;margin:6px 0px;background-color:gray;"></div>
+            <div style="width:12px;display:inline-block;"></div>
+            <div id="band3-preview" style="display:inline-block;width:12px;height:49px;margin:6px 0px;background-color:gray;"></div>
+            <div style="width:62px;display:inline-block;"></div>
+            <div class="Tolerancest" id="band4-preview" style="display:inline-block;width:12px;height:49px;margin:6px 0px;background-color:gray;"></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="controls">
+      <label for="band1-color">Band 1:</label>
+      <select id="band1-color"></select>
+      <label for="band2-color">Band 2:</label>
+      <select id="band2-color"></select>
+      <label for="band3-color">Band 3 (Multiplier):</label>
+      <select id="band3-color"></select>
+      <label for="band4-color">Band 4 (Tolerance):</label>
+      <select id="band4-color"></select>
+    </div>
+    <p id="result">Resistance: 0 Ω ±20%</p>
+  </div>
+  <table border="1" style="border-collapse: collapse; width: 100%; text-align: center;">
+    <thead style="background-color: #111111; font-size: 15px;">
+      <tr>
+        <th>Color</th>
+        <th>1st, 2nd, 3rd Band Significant Figures</th>
+        <th>Multiplier</th>
+        <th>Tolerance</th>
+        <th>Temperature Coefficient</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background-color: black; color: white;">
+        <td>Black</td>
+        <td>0</td>
+        <td>1</td>
+        <td>N/A</td>
+        <td>N/A</td>
+      </tr>
+      <tr style="background-color: #964b00; color: white;">
+        <td>Brown</td>
+        <td>1</td>
+        <td>10</td>
+        <td>±1%</td>
+        <td>±100 ppm/K</td>
+      </tr>
+      <tr style="background-color: red; color: white;">
+        <td>Red</td>
+        <td>2</td>
+        <td>100</td>
+        <td>±2%</td>
+        <td>±50 ppm/K</td>
+      </tr>
+      <tr style="background-color: orange;">
+        <td>Orange</td>
+        <td>3</td>
+        <td>1,000</td>
+        <td>N/A</td>
+        <td>±15 ppm/K</td>
+      </tr>
+      <tr style="background-color: yellow;">
+        <td>Yellow</td>
+        <td>4</td>
+        <td>10,000</td>
+        <td>N/A</td>
+        <td>±25 ppm/K</td>
+      </tr>
+      <tr style="background-color: green; color: white;">
+        <td>Green</td>
+        <td>5</td>
+        <td>100,000</td>
+        <td>±0.5%</td>
+        <td>±20 ppm/K</td>
+      </tr>
+      <tr style="background-color: blue; color: white;">
+        <td>Blue</td>
+        <td>6</td>
+        <td>1,000,000</td>
+        <td>±0.25%</td>
+        <td>±10 ppm/K</td>
+      </tr>
+      <tr style="background-color: violet; color: white;">
+        <td>Violet</td>
+        <td>7</td>
+        <td>10,000,000</td>
+        <td>±0.1%</td>
+        <td>±5 ppm/K</td>
+      </tr>
+      <tr style="background-color: gray; color: white;">
+        <td>Gray</td>
+        <td>8</td>
+        <td>N/A</td>
+        <td>±0.05%</td>
+        <td>±1 ppm/K</td>
+      </tr>
+      <tr style="background-color: white; color: black;">
+        <td>White</td>
+        <td>9</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>N/A</td>
+      </tr>
+      <tr style="background-color: gold; color: black;">
+        <td>Gold</td>
+        <td>N/A</td>
+        <td>0.1</td>
+        <td>±5%</td>
+        <td>N/A</td>
+      </tr>
+      <tr style="background-color: silver; color: black;">
+        <td>Silver</td>
+        <td>N/A</td>
+        <td>0.01</td>
+        <td>±10%</td>
+        <td>N/A</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <script src="script.js"></script>
+</body>
+</html>
