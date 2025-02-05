@@ -1,25 +1,27 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #333, #555);
     color: white;
     text-align: center;
     padding: 20px;
   }
   
-  .container {
+  .container-1 {
     max-width: 600px;
     margin: auto;
-    background: #444;
+    background: #5babff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px #5babff;
   }
-  .container tr div{
+  .container-1 tr div{
     position:relative;
     left:-33px;
    }
-   .container tr .Tolerancest{
+   .container-1 tr .Tolerancest{
     left:-62px;
+   }
+   .container-1 tr td{
+    padding-left:32px;
    }
    
   table {
@@ -47,9 +49,12 @@ body {
     margin-top: 20px;
     font-size: 1.2em;
   }
-  table tr th{
+  .container-1 table tr th{
     transform:translatex(0px) translatey(0px);
     font-size:19px;
     line-height:37.1px;
    }
   
+
+
+   
